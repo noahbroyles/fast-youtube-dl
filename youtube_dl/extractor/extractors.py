@@ -39,7 +39,6 @@ from .aenetworks import (
 from .afreecatv import AfreecaTVIE
 from .airmozilla import AirMozillaIE
 from .aljazeera import AlJazeeraIE
-from .alphaporno import AlphaPornoIE
 from .amara import AmaraIE
 from .amcnetworks import AMCNetworksIE
 from .americastestkitchen import (
@@ -446,7 +445,6 @@ from .googlepodcasts import (
     GooglePodcastsFeedIE,
 )
 from .googlesearch import GoogleSearchIE
-from .goshgay import GoshgayIE
 from .gputechconf import GPUTechConfIE
 from .groupon import GrouponIE
 from .hbo import HBOIE
@@ -937,22 +935,6 @@ from .polskieradio import (
 )
 from .popcorntimes import PopcorntimesIE
 from .popcorntv import PopcornTVIE
-from .porn91 import Porn91IE
-from .porncom import PornComIE
-from .pornhd import PornHdIE
-from .pornhub import (
-    PornHubIE,
-    PornHubUserIE,
-    PornHubPagedVideoListIE,
-    PornHubUserVideosUploadIE,
-)
-from .pornotube import PornotubeIE
-from .pornovoisines import PornoVoisinesIE
-from .pornoxo import PornoXOIE
-from .puhutv import (
-    PuhuTVIE,
-    PuhuTVSerieIE,
-)
 from .presstv import PressTVIE
 from .prosiebensat1 import ProSiebenSat1IE
 from .puls4 import Puls4IE
@@ -1065,7 +1047,6 @@ from .senateisvp import SenateISVPIE
 from .sendtonews import SendtoNewsIE
 from .servus import ServusIE
 from .sevenplus import SevenPlusIE
-from .sexu import SexuIE
 from .seznamzpravy import (
     SeznamZpravyIE,
     SeznamZpravyArticleIE,
@@ -1108,7 +1089,6 @@ from .sky import (
 )
 from .slideshare import SlideshareIE
 from .slideslive import SlidesLiveIE
-from .slutload import SlutloadIE
 from .snotr import SnotrIE
 from .sohu import SohuIE
 from .sonyliv import SonyLIVIE
@@ -1563,7 +1543,6 @@ from .xstream import XstreamIE
 from .xtube import XTubeUserIE, XTubeIE
 from .xuite import XuiteIE
 from .xvideos import XVideosIE
-from .xxxymovies import XXXYMoviesIE
 from .yahoo import (
     YahooIE,
     YahooSearchIE,
@@ -1584,7 +1563,6 @@ from .yapfiles import YapFilesIE
 from .yesjapan import YesJapanIE
 from .yinyuetai import YinYueTaiIE
 from .ynet import YnetIE
-from .youjizz import YouJizzIE
 from .youku import (
     YoukuIE,
     YoukuShowIE,
@@ -1594,8 +1572,6 @@ from .younow import (
     YouNowChannelIE,
     YouNowMomentIE,
 )
-from .youporn import YouPornIE
-from .yourporn import YourPornIE
 from .yourupload import YourUploadIE
 from .youtube import (
     YoutubeIE,

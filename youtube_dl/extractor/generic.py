@@ -58,7 +58,6 @@ from .condenast import CondeNastIE
 from .udn import UDNEmbedIE
 from .senateisvp import SenateISVPIE
 from .svt import SVTIE
-from .pornhub import PornHubIE
 from .xhamster import XHamsterEmbedIE
 from .tnaflix import TNAFlixNetworkEmbedIE
 from .drtuber import DrTuberIE
@@ -66,7 +65,6 @@ from .redtube import RedTubeIE
 from .tube8 import Tube8IE
 from .mofosex import MofosexEmbedIE
 from .spankwire import SpankwireIE
-from .youporn import YouPornIE
 from .vimeo import (
     VimeoIE,
     VHXEmbedIE,
