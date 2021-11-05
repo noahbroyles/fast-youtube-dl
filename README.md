@@ -2,7 +2,7 @@
 
 # Hella Fast youtube-dl fork
 All the credit for making the hella fast version hella fast goes to mah homie [dirkf](https://github.com/dirkf)(so go like and subscribe over there ;).  
-The poor guy's PR didn't get merged because of some licensing unpleasantries; I however have no qualms about that. This is MY fork, mufukrs!
+The poor guy's PR didn't get merged because of some licensing unpleasantries; I however have no qualms about that. This is MY fork, #mufukrs!
 
 youtube-dl - download videos from youtube.com or other video platforms
 
