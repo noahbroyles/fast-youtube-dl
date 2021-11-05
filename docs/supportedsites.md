@@ -271,8 +271,6 @@
  - **Embedly**
  - **EMPFlix**
  - **Engadget**
- - **Eporner**
- - **EroProfile**
  - **Escapist**
  - **ESPN**
  - **ESPNArticle**
@@ -351,7 +349,6 @@
  - **hbo**
  - **HearThisAt**
  - **Heise**
- - **HellPorno**
  - **Helsinki**: helsinki.fi
  - **HentaiStigma**
  - **hetklokhuis**
@@ -474,7 +471,6 @@
  - **LnkGo**
  - **loc**: Library of Congress
  - **LocalNews8**
- - **LoveHomePorn**
  - **lrt.lt**
  - **lynda**: lynda.com videos
  - **lynda:course**: lynda.com online courses
@@ -887,7 +883,6 @@
  - **StreetVoice**
  - **StretchInternet**
  - **stv:player**
- - **SunPorno**
  - **sverigesradio:episode**
  - **sverigesradio:publication**
  - **SVT**
@@ -1123,7 +1118,6 @@
  - **washingtonpost:article**
  - **wat.tv**
  - **WatchBox**
- - **WatchIndianPorn**: Watch Indian Porn
  - **WDR**
  - **wdr:mobile**
  - **WDRElefant**
@@ -1155,10 +1149,7 @@
  - **ximalaya**: 喜马拉雅FM
  - **ximalaya:album**: 喜马拉雅FM 专辑
  - **XMinus**
- - **XNXX**
  - **Xstream**
- - **XTube**
- - **XTubeUser**: XTube user profile
  - **Xuite**: 隨意窩Xuite影音
  - **XVideos**
  - **Yahoo**: Yahoo screen and movies
