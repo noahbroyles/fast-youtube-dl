@@ -342,8 +342,6 @@ from .ellentube import (
 from .elpais import ElPaisIE
 from .embedly import EmbedlyIE
 from .engadget import EngadgetIE
-from .eporner import EpornerIE
-from .eroprofile import EroProfileIE
 from .escapist import EscapistIE
 from .espn import (
     ESPNIE,
@@ -450,7 +448,6 @@ from .groupon import GrouponIE
 from .hbo import HBOIE
 from .hearthisat import HearThisAtIE
 from .heise import HeiseIE
-from .hellporno import HellPornoIE
 from .helsinki import HelsinkiIE
 from .hentaistigma import HentaiStigmaIE
 from .hgtv import HGTVComShowIE
@@ -1158,7 +1155,6 @@ from .streamcz import StreamCZIE
 from .streetvoice import StreetVoiceIE
 from .stretchinternet import StretchInternetIE
 from .stv import STVPlayerIE
-from .sunporno import SunPornoIE
 from .sverigesradio import (
     SverigesRadioEpisodeIE,
     SverigesRadioPublicationIE,
@@ -1488,7 +1484,6 @@ from .washingtonpost import (
 )
 from .wat import WatIE
 from .watchbox import WatchBoxIE
-from .watchindianporn import WatchIndianPornIE
 from .wdr import (
     WDRIE,
     WDRPageIE,
@@ -1537,9 +1532,7 @@ from .ximalaya import (
     XimalayaAlbumIE
 )
 from .xminus import XMinusIE
-from .xnxx import XNXXIE
 from .xstream import XstreamIE
-from .xtube import XTubeUserIE, XTubeIE
 from .xuite import XuiteIE
 from .xvideos import XVideosIE
 from .yahoo import (
