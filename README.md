@@ -1,5 +1,8 @@
 [![Build Status](https://github.com/ytdl-org/youtube-dl/workflows/CI/badge.svg)](https://github.com/ytdl-org/youtube-dl/actions?query=workflow%3ACI)
 
+# Hella Fast youtube-dl fork
+All the credit for making the hella fast version hella fast goes to mah homie [dirkf](https://github.com/dirkf)(so go like and subscribe over there ;).  
+The poor guy's PR didn't get merged because of some licensing unpleasantries; I however have no qualms about that. This is MY fork, mufukrs!
 
 youtube-dl - download videos from youtube.com or other video platforms
 
@@ -18,7 +21,7 @@ youtube-dl - download videos from youtube.com or other video platforms
 
 # INSTALLATION
 
-To install it right away for all UNIX users (Linux, macOS, etc.), type:
+To install it right away for all sexy UNIX users (Linux, macOS, etc.), type:
 
     sudo curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
     sudo chmod a+rx /usr/local/bin/youtube-dl
@@ -28,15 +31,10 @@ If you do not have curl, you can alternatively use a recent wget:
     sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
     sudo chmod a+rx /usr/local/bin/youtube-dl
 
-Windows users can [download an .exe file](https://yt-dl.org/latest/youtube-dl.exe) and place it in any location on their [PATH](https://en.wikipedia.org/wiki/PATH_%28variable%29) except for `%SYSTEMROOT%\System32` (e.g. **do not** put in `C:\Windows\System32`).
+Windows users can go blow things elsewhere.
 
-You can also use pip:
 
-    sudo -H pip install --upgrade youtube-dl
-    
-This command will update youtube-dl if you have already installed it. See the [pypi page](https://pypi.python.org/pypi/youtube_dl) for more information.
-
-macOS users can install youtube-dl with [Homebrew](https://brew.sh/):
+macOS users are amazing! They can install youtube-dl with [Homebrew](https://brew.sh/):
 
     brew install youtube-dl
 
@@ -47,7 +45,7 @@ Or with [MacPorts](https://www.macports.org/):
 Alternatively, refer to the [developer instructions](#developer-instructions) for how to check out and work with the git repository. For further options, including PGP signatures, see the [youtube-dl Download Page](https://ytdl-org.github.io/youtube-dl/download.html).
 
 # DESCRIPTION
-**youtube-dl** is a command-line program to download videos from YouTube.com and a few more sites. It requires the Python interpreter, version 2.6, 2.7, or 3.2+, and it is not platform specific. It should work on your Unix box, on Windows or on macOS. It is released to the public domain, which means you can modify it, redistribute it or use it however you like.
+**youtube-dl** is a command-line program to download videos from YouTube.com and a few more sites. It requires the Python interpreter, version 2.6, 2.7, or 3.2+, and it is not platform specific. It should work on your Unix box, on ~~Windows~~ or on macOS. It is released to the public domain, which means you can modify it, redistribute it or use it however you like.
 
     youtube-dl [OPTIONS] URL [URL...]
 
@@ -85,8 +83,6 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
                                          /etc/youtube-dl.conf: Do not read the
                                          user configuration in
                                          ~/.config/youtube-dl/config
-                                         (%APPDATA%/youtube-dl/config.txt on
-                                         Windows)
     --config-location PATH               Location of the configuration file;
                                          either the path to the config or its
                                          containing directory.
@@ -480,7 +476,7 @@ Alternatively, refer to the [developer instructions](#developer-instructions) fo
 
 # CONFIGURATION
 
-You can configure youtube-dl by placing any supported command line option to a configuration file. On Linux and macOS, the system wide configuration file is located at `/etc/youtube-dl.conf` and the user wide configuration file at `~/.config/youtube-dl/config`. On Windows, the user wide configuration file locations are `%APPDATA%\youtube-dl\config.txt` or `C:\Users\<user name>\youtube-dl.conf`. Note that by default configuration file may not exist so you may need to create it yourself.
+You can configure youtube-dl by placing any supported command line option to a configuration file. On Linux and macOS, the system wide configuration file is located at `/etc/youtube-dl.conf` and the user wide configuration file at `~/.config/youtube-dl/config`. On ~~Windows~~ shitholes, the user wide configuration file locations are `%APPDATA%\youtube-dl\config.txt` or `C:\Users\<user name>\youtube-dl.conf`. Note that by default configuration file may not exist so you may need to create it yourself.
 
 For example, with the following configuration file youtube-dl will always extract the audio, not copy the mtime, use a proxy and save all videos under `Movies` directory in your home directory:
 ```
@@ -522,11 +518,6 @@ machine youtube login myaccount@gmail.com password my_youtube_password
 machine twitch login my_twitch_account_name password my_twitch_password
 ```
 To activate authentication with the `.netrc` file you should pass `--netrc` to youtube-dl or place it in the [configuration file](#configuration).
-
-On Windows you may also need to setup the `%HOME%` environment variable manually. For example:
-```
-set HOME=%USERPROFILE%
-```
 
 # OUTPUT TEMPLATE
 
@@ -632,15 +623,9 @@ To use percent literals in an output template use `%%`. To output to stdout use 
 
 The current default template is `%(title)s-%(id)s.%(ext)s`.
 
-In some cases, you don't want special characters such as 中, spaces, or &, such as when transferring the downloaded filename to a Windows system or the filename through an 8bit-unsafe channel. In these cases, add the `--restrict-filenames` flag to get a shorter title:
-
-#### Output template and Windows batch files
-
-If you are using an output template inside a Windows batch file then you must escape plain percent characters (`%`) by doubling, so that `-o "%(title)s-%(id)s.%(ext)s"` should become `-o "%%(title)s-%%(id)s.%%(ext)s"`. However you should not touch `%`'s that are not plain characters, e.g. environment variables for expansion should stay intact: `-o "C:\%HOMEPATH%\Desktop\%%(title)s.%%(ext)s"`.
+In some cases, you don't want special characters such as 中, spaces, or &, such as when transferring the downloaded filename to a shitty ass ~~Windows~~ system or the filename through an 8bit-unsafe channel. In these cases, add the `--restrict-filenames` flag to get a shorter title:
 
 #### Output template examples
-
-Note that on Windows you may need to use double quotes instead of single.
 
 ```bash
 $ youtube-dl --get-filename -o '%(title)s.%(ext)s' BaW_jenozKc
@@ -667,7 +652,7 @@ $ youtube-dl -o - BaW_jenozKc
 
 # FORMAT SELECTION
 
-By default youtube-dl tries to download the best available quality, i.e. if you want the best quality you **don't need** to pass any special options, youtube-dl will guess it for you by **default**.
+By default, youtube-dl tries to download the best available quality, i.e. if you want the best quality you **don't need** to pass any special options, youtube-dl will guess it for you by **default**.
 
 But sometimes you may want to download in a different format, for example when you are on a slow or intermittent connection. The key mechanism for achieving this is so-called *format selection* based on which you can explicitly specify desired format, select formats based on some criterion or criteria, setup precedence and much more.
 
@@ -733,7 +718,7 @@ If you want to preserve the old format selection behavior (prior to youtube-dl 2
 
 #### Format selection examples
 
-Note that on Windows you may need to use double quotes instead of single.
+Note that on Windows you may need to install Linux instead.
 
 ```bash
 # Download best mp4 format available or any other best if no mp4 available
@@ -798,9 +783,9 @@ hash -r
 
 Again, from then on you'll be able to update with `sudo youtube-dl -U`.
 
-### youtube-dl is extremely slow to start on Windows
+### youtube-dl is extremely slow to start on Windows. Big surprise there. So is everything.
 
-Add a file exclusion for `youtube-dl.exe` in Windows Defender settings.
+Add a file exclusion for `youtube-dl.exe` in Windows shitty Defender settings.
 
 ### I'm getting an error `Unable to extract OpenGraph title` on YouTube playlists
 
@@ -864,10 +849,6 @@ or
 
 ```youtube-dl https://www.youtube.com/watch?t=4\&v=BaW_jenozKc```
 
-For Windows you have to use the double quotes:
-
-```youtube-dl "https://www.youtube.com/watch?t=4&v=BaW_jenozKc"```
-
 ### ExtractorError: Could not find JS function u'OF'
 
 In February 2015, the new YouTube player contained a character sequence in a string that was misinterpreted by old versions of youtube-dl. See [above](#how-do-i-update-youtube-dl) for how to update youtube-dl.
@@ -897,11 +878,7 @@ To run the exe you need to install first the [Microsoft Visual C++ 2010 Service 
 
 ### On Windows, how should I set up ffmpeg and youtube-dl? Where should I put the exe files?
 
-If you put youtube-dl and ffmpeg in the same directory that you're running the command from, it will work, but that's rather cumbersome.
-
-To make a different directory work - either for ffmpeg, or for youtube-dl, or for both - simply create the directory (say, `C:\bin`, or `C:\Users\<User name>\bin`), put all the executables directly in there, and then [set your PATH environment variable](https://www.java.com/en/download/help/path.xml) to include that directory.
-
-From then on, after restarting your shell, you will be able to access both youtube-dl and ffmpeg (and youtube-dl will be able to find ffmpeg) by simply typing `youtube-dl` or `ffmpeg`, no matter what directory you're in.
+If you're trying to do anything on Windows, you're inherently fucked. Switch to a real system immediately. 
 
 ### How do I put downloads into a specific folder?
 
@@ -920,7 +897,7 @@ Use the `--cookies` option, for example `--cookies /path/to/cookies/file.txt`.
 
 In order to extract cookies from browser use any conforming browser extension for exporting cookies. For example, [Get cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid/) (for Chrome) or [cookies.txt](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) (for Firefox).
 
-Note that the cookies file must be in Mozilla/Netscape format and the first line of the cookies file must be either `# HTTP Cookie File` or `# Netscape HTTP Cookie File`. Make sure you have correct [newline format](https://en.wikipedia.org/wiki/Newline) in the cookies file and convert newlines if necessary to correspond with your OS, namely `CRLF` (`\r\n`) for Windows and `LF` (`\n`) for Unix and Unix-like systems (Linux, macOS, etc.). `HTTP Error 400: Bad Request` when using `--cookies` is a good sign of invalid newline format.
+Note that the cookies file must be in Mozilla/Netscape format and the first line of the cookies file must be either `# HTTP Cookie File` or `# Netscape HTTP Cookie File`. Make sure you have correct [newline format](https://en.wikipedia.org/wiki/Newline) in the cookies file and convert newlines if necessary to correspond with your OS, namely `CRLF` (`\r\n`) for dumb ass Windows and `LF` (`\n`) for Unix and Unix-like systems (Linux, macOS, etc.). `HTTP Error 400: Bad Request` when using `--cookies` is a good sign of invalid newline format.
 
 Passing cookies to youtube-dl is a good way to workaround login when a particular extractor does not implement it explicitly. Another use case is working around [CAPTCHA](https://en.wikipedia.org/wiki/CAPTCHA) some websites require you to solve in particular cases in order to get access (e.g. YouTube, CloudFlare).
 
@@ -1417,7 +1394,7 @@ $ youtube-dl -v <your command line>
 [debug] Encodings: locale cp1251, fs mbcs, out cp866, pref cp1251
 [debug] youtube-dl version 2015.12.06
 [debug] Git HEAD: 135392e
-[debug] Python version 2.6.6 - Windows-2003Server-5.2.3790-SP2
+[debug] Python version 2.6.6 - Shitcan-2003Server-5.2.3790-SP2
 [debug] exe versions: ffmpeg N-75573-g1d0487f, ffprobe N-75573-g1d0487f, rtmpdump 2.4
 [debug] Proxy map: {}
 ...
@@ -1480,6 +1457,6 @@ It may sound strange, but some bug reports we receive are completely unrelated t
 
 # COPYRIGHT
 
-youtube-dl is released into the public domain by the copyright holders.
+fast-youtube-dl is released into the public domain by ME! You can jack around with it in any way you like.
 
 This README file was originally written by [Daniel Bolton](https://github.com/dbbolton) and is likewise released into the public domain.
